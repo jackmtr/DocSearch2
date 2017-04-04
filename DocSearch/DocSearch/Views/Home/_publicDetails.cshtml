@@ -1,0 +1,12 @@
+﻿@model DocSearch.Models.tbl_Folder
+
+@if (@Model.Name == null)
+{
+    <h1>Invalid Policy Number</h1>
+}
+else {
+    <h1>Policy Details</h1>
+    <h2>
+        Name: @Model.Name
+    </h2>
+}

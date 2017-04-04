@@ -1,0 +1,58 @@
+﻿@model DocSearch.Models.tbl_Folder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_Folder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Security)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Security)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastUser_DT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastUser_DT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_Cabinet.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_Cabinet.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Folder_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
