@@ -171,6 +171,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AjaxController.cs" />
+    <Compile Include="Controllers\CategoryDocumentDocumentTypeDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\tbl_FolderController.cs" />
@@ -204,6 +205,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Repositories\PublicDataVMRepo.cs" />
+    <Compile Include="ViewModels\PublicDataVM.cs" />
     <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -348,6 +351,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Ajax\" />
+    <Folder Include="Views\CategoryDocumentDocumentTypeDetails\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
